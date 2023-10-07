@@ -2932,7 +2932,7 @@ hr {
 }
 
 .slider-area2 {
-    background-image: url(../img/hero/h1.jpg);
+    background-image: url(../img/hero/hero2.png);
     background-repeat: no-repeat;
     background-size: cover
 }
@@ -3326,7 +3326,7 @@ hr {
 }
 
 .visit-tailor-area .tailor-offers {
-    background-image: url(../img/hero/h2.jpg);
+    background-image: url(../img/gallery/visit_bg.png);
     background-size: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3620,8 +3620,7 @@ hr {
     -moz-transition: .4s;
     -o-transition: .4s;
     transition: .4s;
-    width: 500px;
-    height: 300px;
+    width: 100%;
     transform: scale(1)
 }
 
