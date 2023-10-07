@@ -3620,7 +3620,8 @@ hr {
     -moz-transition: .4s;
     -o-transition: .4s;
     transition: .4s;
-    width: 100%;
+    width: 500px;
+    height: 320px;
     transform: scale(1)
 }
 
