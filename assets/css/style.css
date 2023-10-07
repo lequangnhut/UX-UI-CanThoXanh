@@ -4177,7 +4177,7 @@ hr {
     color: #707b8e
 }
 
-.home-blog-area .home-blog-single .blog-img-cap .blog-cap h3 a {
+.home-blog-area .home-blog-single .blog-img-cap .blog-cap h4 a {
     color: #191d34;
     font-size: 30px;
     font-weight: 400;
@@ -4187,32 +4187,32 @@ hr {
     padding-right: 50px
 }
 
-.home-blog-area .home-blog-single .blog-img-cap .blog-cap h3 a:hover {
+.home-blog-area .home-blog-single .blog-img-cap .blog-cap h4 a:hover {
     color: #09cc7f
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .home-blog-area .home-blog-single .blog-img-cap .blog-cap h3 a {
+    .home-blog-area .home-blog-single .blog-img-cap .blog-cap h4 a {
         font-size: 25px
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .home-blog-area .home-blog-single .blog-img-cap .blog-cap h3 a {
+    .home-blog-area .home-blog-single .blog-img-cap .blog-cap h4 a {
         font-size: 19px;
         padding-right: 0px
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .home-blog-area .home-blog-single .blog-img-cap .blog-cap h3 a {
+    .home-blog-area .home-blog-single .blog-img-cap .blog-cap h4 a {
         font-size: 19px;
         padding-right: 0px
     }
 }
 
 @media (max-width: 575px) {
-    .home-blog-area .home-blog-single .blog-img-cap .blog-cap h3 a {
+    .home-blog-area .home-blog-single .blog-img-cap .blog-cap h4 a {
         font-size: 19px;
         padding-right: 0px
     }
