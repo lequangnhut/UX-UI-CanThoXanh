@@ -2800,15 +2800,15 @@ hr {
 }
 
 .slider-bg1 {
-    background-image: url(../img/hero/h1_hero1.png)
+    background-image: url(../img/hero/h5.jpg)
 }
 
 .slider-bg2 {
-    background-image: url(../img/hero/h1_hero2.png)
+    background-image: url(../img/hero/h6.jpg)
 }
 
 .slider-bg3 {
-    background-image: url(../img/hero/h1_hero3.png)
+    background-image: url(../img/hero/h3.jpg)
 }
 
 @media (max-width: 575px) {
@@ -2818,7 +2818,7 @@ hr {
 }
 
 .slider-area .hero__caption h1 {
-    font-size: 115px;
+    font-size: 80px;
     font-weight: 400;
     margin-bottom: 14px;
     color: #fff;
@@ -2977,7 +2977,7 @@ hr {
 }
 
 .video-area {
-    background-image: url("../img/hero/slider-video-bg.png");
+    background-image: url("../img/hero/team.jpg");
     background-repeat: no-repeat;
     height: 300px;
     width: 455px;
@@ -3326,7 +3326,7 @@ hr {
 }
 
 .visit-tailor-area .tailor-offers {
-    background-image: url(../img/gallery/visit_bg.png);
+    background-image: url(../img/hero/h2.jpg);
     background-size: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3520,7 +3520,7 @@ hr {
     background: linear-gradient(90deg, #6fd66c 0%, #48c1b9 100%);
     padding: 0px 25px;
     left: -250px;
-    bottom: 50px
+    bottom: 40px
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
