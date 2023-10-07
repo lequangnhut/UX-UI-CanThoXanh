@@ -3554,7 +3554,7 @@ hr {
     background: linear-gradient(90deg, #6fd66c 0%, #48c1b9 100%);
     padding: 0px 25px;
     left: -250px;
-    bottom: 50px
+    bottom: 40px
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
