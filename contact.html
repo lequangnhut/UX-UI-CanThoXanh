@@ -327,43 +327,61 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyxiTCebLf_QjHJwtfQMbsuPhNMG2n8xDX20mEtE5-n2WRiLOV_dRZuAPSG9o3c2kCX/exec'
 
-        const form = document.forms['contact-form']
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.forms['contact-form'];
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
 
-            // Thêm hiệu ứng loading
-            Swal.fire({
-                title: 'Loading...',
-                allowOutsideClick: false,
-                onBeforeOpen: () => {
-                    Swal.showLoading()
-                }
-            })
+                // Kiểm tra các trường dữ liệu
+                const message = form.querySelector('[name="message"]').value.trim();
+                const fullname = form.querySelector('[name="fullname"]').value.trim();
+                const email = form.querySelector('[name="email"]').value.trim();
+                const subject = form.querySelector('[name="subject"]').value.trim();
 
-            fetch(scriptURL, {method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    // Ẩn hiệu ứng loading khi gửi thành công
-                    Swal.close()
-
-                    Swal.fire(
-                        'Thành công !',
-                        'Cảm ơn bạn đã đóng góp ý kiến !',
-                        'success'
-                    ).then(() => {
-                        window.location.reload();
-                    })
-                })
-                .catch(error => {
-                    // Ẩn hiệu ứng loading khi có lỗi
-                    Swal.close()
+                // Nếu bất kỳ trường nào trống
+                if (!message || !fullname || !email || !subject) {
                     Swal.fire(
                         'Thất bại !',
-                        'Đóng góp ý kiến thất bại !',
-                        'error'
+                        'Vui lòng nhập đủ thông tin !',
+                        'warning'
                     )
-                })
-        })
+                    return;
+                }
+
+                // Thêm hiệu ứng loading
+                Swal.fire({
+                    title: 'Loading...',
+                    allowOutsideClick: false,
+                    onBeforeOpen: () => {
+                        Swal.showLoading();
+                    }
+                });
+
+                fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        // Ẩn hiệu ứng loading khi gửi thành công
+                        Swal.close();
+
+                        Swal.fire(
+                            'Thành công !',
+                            'Cảm ơn bạn đã đóng góp ý kiến !',
+                            'success'
+                        ).then(() => {
+                            window.location.reload();
+                        });
+                    })
+                    .catch(error => {
+                        // Ẩn hiệu ứng loading khi có lỗi
+                        Swal.close();
+                        Swal.fire(
+                            'Thất bại !',
+                            'Đóng góp ý kiến thất bại !',
+                            'error'
+                        );
+                    });
+            });
+        });
     </script>
 
 </main>
